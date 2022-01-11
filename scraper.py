@@ -1,7 +1,9 @@
 from telethon import TelegramClient, events
+import re
 
 app_id = 12639386
 api_hash = '0b935c59441284d7ae831db87230255a'
+pattern = re.compile('(https?:\/\/.+?\.\w+)|(\w+\.(?:com|io|online|fi|org|ru|finance|fund|network|money|co|exchange|xyz|app|cash|ai))')
 
 #нарния чат -1001369370434
 #lobsterdao -1001242127973
@@ -17,8 +19,9 @@ client = TelegramClient('user', app_id, api_hash)
 async def my_event_handler(event):
     chat_id = event.chat_id
     if chat_id in chats:
-        print(event.raw_text)
-        await event.forward_to(forwardChat)
+        if pattern.search(event.raw_text) is not None:
+            print(event.raw_text)
+            await event.forward_to(forwardChat)
 
 client.start()
 client.run_until_disconnected()
