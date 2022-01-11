@@ -1,8 +1,8 @@
 from telethon import TelegramClient, events
 import re
 
-app_id = 12639386
-api_hash = '0b935c59441284d7ae831db87230255a'
+app_id = 12983384
+api_hash = '641d1d4b6b72e34e296f128ad84e4c97'
 pattern = re.compile('(https?:\/\/.+?\.\w+)|(\w+\.(?:com|io|online|fi|org|ru|finance|fund|network|money|co|exchange|xyz|app|cash|ai))')
 
 #нарния чат -1001369370434
