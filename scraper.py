@@ -11,7 +11,7 @@ pattern = re.compile('(https?:\/\/.+?\.\w+)|(\w+\.(?:com|io|online|fi|org|ru|fin
 
 forwardChat = -1001773781316
 
-chats = [-1001369370434, -1001242127973, -1001451302716]
+chats = [-1001369370434, -1001242127973, -1001451302716, -1001178733676, -1001401070472, -1001156119672]
 
 client = TelegramClient('user', app_id, api_hash)
 
