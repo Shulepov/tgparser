@@ -9,7 +9,7 @@ pattern = re.compile('(https?:\/\/.+?\.\w+)|(\w+\.(?:com|io|online|fi|org|ru|fin
 #lobsterdao -1001242127973
 #defilog -1001451302716
 
-forwardChat = -1001673311085
+forwardChat = -1001773781316
 
 chats = [-1001369370434, -1001242127973, -1001451302716]
 
